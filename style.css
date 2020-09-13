@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight:700;
+    color: hsl(233, 13%, 49%);
+    background-color: hsl(240, 78%, 98%);
+    background-image: url(bg-top.svg), url(bg-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0rem right 0rem, bottom -4.6rem left 0rem;
+  }
+  header{
+      margin-top:50px;
+      text-align:center;
+  }
+  .card{
+      display:inline-block;
+      background-color:white;
+      width:25%;
+      margin-top:30px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 6px 4px #d4e9e9;
+      text-align: center;
+      padding: 30px;
+      height:430px;
+      justify-content: center;
+  }
+  .card li{
+      list-style:none;
+
+  }
+  .card1{
+      margin-left:10%;
+      
+  }
+  .card2{
+    background: linear-gradient(to right, #a3a8f0, #696fdd) no-repeat;
+     color:white;
+     height:470px;
+
+  }
+  button{
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 15px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px;
+    cursor: pointer;
+  }
+  .card1 button{
+    background: linear-gradient(to right, #a3a8f0, #696fdd) no-repeat;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .card1 button:hover{
+      background:white;
+      color: hsl(233, 13%, 49%);
+      border: 1px solid hsl(233, 13%, 49%);
+  }
+  .card2 button{
+    background: white;
+    border: 1px solid transparent;
+    color: hsl(233, 13%, 49%);
+  }
+  .card2 button:hover{
+    background: linear-gradient(to right, #a3a8f0, #696fdd) no-repeat;
+    border: 1px solid  white;
+    color: white;
+  }
+  .card3 button{
+    background: linear-gradient(to right, #a3a8f0, #696fdd) no-repeat;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .card3 button:hover{
+      background:white;
+      color: hsl(233, 13%, 49%);
+      border: 1px solid hsl(233, 13%, 49%);
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 32px;
+    margin: 18px 23px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #a3a8f0, #696fdd);
+    transition: 0s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 254, 254);
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background: linear-gradient(to right, #a3a8f0, #696fdd);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  input + .slider:hover {
+    background: #dfe0f0;
+  }
+  .annual-price{
+    display:none;
+  }
+  @media only screen and (max-width:600px) {
+    body {
+      background-image: url(bg-top.svg);
+      background-repeat: no-repeat;
+      background-position: top -2.2rem right -12rem;
+    }
+    .section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .card{
+      display:block;
+      width:90%;
+      margin-left:10px;
+      margin-right:10px;
+     }
+  }
